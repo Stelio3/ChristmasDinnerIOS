@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79461F1521E6512600C35B7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79461F1421E6512600C35B7B /* AppDelegate.swift */; };
+		79461F1C21E6512700C35B7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79461F1B21E6512700C35B7B /* Assets.xcassets */; };
+		79461F1F21E6512700C35B7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79461F1D21E6512700C35B7B /* LaunchScreen.storyboard */; };
+		79461F2B21E655C600C35B7B /* ParticipantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79461F2921E655C600C35B7B /* ParticipantsViewController.swift */; };
+		79461F2C21E655C600C35B7B /* ParticipantsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79461F2A21E655C600C35B7B /* ParticipantsViewController.xib */; };
+		79461F3621E6587700C35B7B /* ParticipantsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79461F3421E6587700C35B7B /* ParticipantsCell.swift */; };
+		79461F3721E6587700C35B7B /* ParticipantsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79461F3521E6587700C35B7B /* ParticipantsCell.xib */; };
+		79461F3B21E6596700C35B7B /* AddParticipantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79461F3921E6596700C35B7B /* AddParticipantsViewController.swift */; };
+		79461F3C21E6596700C35B7B /* AddParticipantsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79461F3A21E6596700C35B7B /* AddParticipantsViewController.xib */; };
+		79461F3E21E659B700C35B7B /* Participants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79461F3D21E659B700C35B7B /* Participants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		79461F1121E6512600C35B7B /* Christmas dinner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Christmas dinner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79461F1421E6512600C35B7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		79461F1B21E6512700C35B7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		79461F1E21E6512700C35B7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		79461F2021E6512700C35B7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79461F2921E655C600C35B7B /* ParticipantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantsViewController.swift; sourceTree = "<group>"; };
+		79461F2A21E655C600C35B7B /* ParticipantsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParticipantsViewController.xib; sourceTree = "<group>"; };
+		79461F3421E6587700C35B7B /* ParticipantsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantsCell.swift; sourceTree = "<group>"; };
+		79461F3521E6587700C35B7B /* ParticipantsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ParticipantsCell.xib; sourceTree = "<group>"; };
+		79461F3921E6596700C35B7B /* AddParticipantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddParticipantsViewController.swift; sourceTree = "<group>"; };
+		79461F3A21E6596700C35B7B /* AddParticipantsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddParticipantsViewController.xib; sourceTree = "<group>"; };
+		79461F3D21E659B700C35B7B /* Participants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Participants.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79461F0E21E6512600C35B7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79461F0821E6512600C35B7B = {
+			isa = PBXGroup;
+			children = (
+				79461F1321E6512600C35B7B /* Christmas dinner */,
+				79461F1221E6512600C35B7B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		79461F1221E6512600C35B7B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79461F1121E6512600C35B7B /* Christmas dinner.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79461F1321E6512600C35B7B /* Christmas dinner */ = {
+			isa = PBXGroup;
+			children = (
+				79461F3321E656C900C35B7B /* ViewController */,
+				79461F3121E656B300C35B7B /* Cells */,
+				79461F3021E656A800C35B7B /* Models */,
+				79461F2F21E6569800C35B7B /* Repositories */,
+				79461F2E21E6568E00C35B7B /* Emptities */,
+				79461F1421E6512600C35B7B /* AppDelegate.swift */,
+				79461F1B21E6512700C35B7B /* Assets.xcassets */,
+				79461F1D21E6512700C35B7B /* LaunchScreen.storyboard */,
+				79461F2021E6512700C35B7B /* Info.plist */,
+			);
+			path = "Christmas dinner";
+			sourceTree = "<group>";
+		};
+		79461F2621E654F100C35B7B /* ParticipantsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				79461F2921E655C600C35B7B /* ParticipantsViewController.swift */,
+				79461F2A21E655C600C35B7B /* ParticipantsViewController.xib */,
+			);
+			path = ParticipantsViewController;
+			sourceTree = "<group>";
+		};
+		79461F2D21E6567200C35B7B /* ParticipantsCell */ = {
+			isa = PBXGroup;
+			children = (
+				79461F3421E6587700C35B7B /* ParticipantsCell.swift */,
+				79461F3521E6587700C35B7B /* ParticipantsCell.xib */,
+			);
+			path = ParticipantsCell;
+			sourceTree = "<group>";
+		};
+		79461F2E21E6568E00C35B7B /* Emptities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Emptities;
+			sourceTree = "<group>";
+		};
+		79461F2F21E6569800C35B7B /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		79461F3021E656A800C35B7B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				79461F3D21E659B700C35B7B /* Participants.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		79461F3121E656B300C35B7B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				79461F2D21E6567200C35B7B /* ParticipantsCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		79461F3321E656C900C35B7B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				79461F3821E6592700C35B7B /* AddParticipantsViewController */,
+				79461F2621E654F100C35B7B /* ParticipantsViewController */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		79461F3821E6592700C35B7B /* AddParticipantsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				79461F3921E6596700C35B7B /* AddParticipantsViewController.swift */,
+				79461F3A21E6596700C35B7B /* AddParticipantsViewController.xib */,
+			);
+			path = AddParticipantsViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79461F1021E6512600C35B7B /* Christmas dinner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79461F2321E6512700C35B7B /* Build configuration list for PBXNativeTarget "Christmas dinner" */;
+			buildPhases = (
+				79461F0D21E6512600C35B7B /* Sources */,
+				79461F0E21E6512600C35B7B /* Frameworks */,
+				79461F0F21E6512600C35B7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Christmas dinner";
+			productName = "Christmas dinner";
+			productReference = 79461F1121E6512600C35B7B /* Christmas dinner.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79461F0921E6512600C35B7B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "PABLO HERNANDEZ JIMENEZ";
+				TargetAttributes = {
+					79461F1021E6512600C35B7B = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 79461F0C21E6512600C35B7B /* Build configuration list for PBXProject "Christmas dinner" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 79461F0821E6512600C35B7B;
+			productRefGroup = 79461F1221E6512600C35B7B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79461F1021E6512600C35B7B /* Christmas dinner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79461F0F21E6512600C35B7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79461F2C21E655C600C35B7B /* ParticipantsViewController.xib in Resources */,
+				79461F1F21E6512700C35B7B /* LaunchScreen.storyboard in Resources */,
+				79461F1C21E6512700C35B7B /* Assets.xcassets in Resources */,
+				79461F3C21E6596700C35B7B /* AddParticipantsViewController.xib in Resources */,
+				79461F3721E6587700C35B7B /* ParticipantsCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79461F0D21E6512600C35B7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79461F3B21E6596700C35B7B /* AddParticipantsViewController.swift in Sources */,
+				79461F2B21E655C600C35B7B /* ParticipantsViewController.swift in Sources */,
+				79461F3E21E659B700C35B7B /* Participants.swift in Sources */,
+				79461F1521E6512600C35B7B /* AppDelegate.swift in Sources */,
+				79461F3621E6587700C35B7B /* ParticipantsCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		79461F1D21E6512700C35B7B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79461F1E21E6512700C35B7B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		79461F2121E6512700C35B7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		79461F2221E6512700C35B7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		79461F2421E6512700C35B7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Christmas dinner/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "bugisos.Christmas-dinner";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		79461F2521E6512700C35B7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Christmas dinner/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "bugisos.Christmas-dinner";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79461F0C21E6512600C35B7B /* Build configuration list for PBXProject "Christmas dinner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79461F2121E6512700C35B7B /* Debug */,
+				79461F2221E6512700C35B7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79461F2321E6512700C35B7B /* Build configuration list for PBXNativeTarget "Christmas dinner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79461F2421E6512700C35B7B /* Debug */,
+				79461F2521E6512700C35B7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79461F0921E6512600C35B7B /* Project object */;
+}
