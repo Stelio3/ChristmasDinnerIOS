@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		110D4D9C2E19D1BDE3EB8D50 /* Pods_Christmas_dinner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEA54365E003A3DC4B2ED729 /* Pods_Christmas_dinner.framework */; };
 		79461F1521E6512600C35B7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79461F1421E6512600C35B7B /* AppDelegate.swift */; };
 		79461F1C21E6512700C35B7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79461F1B21E6512700C35B7B /* Assets.xcassets */; };
 		79461F1F21E6512700C35B7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79461F1D21E6512700C35B7B /* LaunchScreen.storyboard */; };
@@ -17,9 +18,13 @@
 		79461F3B21E6596700C35B7B /* AddParticipantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79461F3921E6596700C35B7B /* AddParticipantsViewController.swift */; };
 		79461F3C21E6596700C35B7B /* AddParticipantsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79461F3A21E6596700C35B7B /* AddParticipantsViewController.xib */; };
 		79461F3E21E659B700C35B7B /* Participants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79461F3D21E659B700C35B7B /* Participants.swift */; };
+		79461F4021E65E7F00C35B7B /* LocalParticipantsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79461F3F21E65E7F00C35B7B /* LocalParticipantsRepository.swift */; };
+		79461F4221E65EBB00C35B7B /* ParticipantsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79461F4121E65EBB00C35B7B /* ParticipantsEntity.swift */; };
+		79461F4421E661E800C35B7B /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79461F4321E661E800C35B7B /* Repository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6E3856F6E80EBB1F7930BE80 /* Pods-Christmas dinner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Christmas dinner.release.xcconfig"; path = "Pods/Target Support Files/Pods-Christmas dinner/Pods-Christmas dinner.release.xcconfig"; sourceTree = "<group>"; };
 		79461F1121E6512600C35B7B /* Christmas dinner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Christmas dinner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79461F1421E6512600C35B7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79461F1B21E6512700C35B7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -32,6 +37,11 @@
 		79461F3921E6596700C35B7B /* AddParticipantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddParticipantsViewController.swift; sourceTree = "<group>"; };
 		79461F3A21E6596700C35B7B /* AddParticipantsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddParticipantsViewController.xib; sourceTree = "<group>"; };
 		79461F3D21E659B700C35B7B /* Participants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Participants.swift; sourceTree = "<group>"; };
+		79461F3F21E65E7F00C35B7B /* LocalParticipantsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalParticipantsRepository.swift; sourceTree = "<group>"; };
+		79461F4121E65EBB00C35B7B /* ParticipantsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantsEntity.swift; sourceTree = "<group>"; };
+		79461F4321E661E800C35B7B /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		BF1D08EE39A0A823293B3B1B /* Pods-Christmas dinner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Christmas dinner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Christmas dinner/Pods-Christmas dinner.debug.xcconfig"; sourceTree = "<group>"; };
+		FEA54365E003A3DC4B2ED729 /* Pods_Christmas_dinner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Christmas_dinner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +49,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				110D4D9C2E19D1BDE3EB8D50 /* Pods_Christmas_dinner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		73C53ABB97A7CEFF16D46D72 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF1D08EE39A0A823293B3B1B /* Pods-Christmas dinner.debug.xcconfig */,
+				6E3856F6E80EBB1F7930BE80 /* Pods-Christmas dinner.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		79461F0821E6512600C35B7B = {
 			isa = PBXGroup;
 			children = (
 				79461F1321E6512600C35B7B /* Christmas dinner */,
 				79461F1221E6512600C35B7B /* Products */,
+				73C53ABB97A7CEFF16D46D72 /* Pods */,
+				CCED80746709A9E6F96A2A5F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +120,7 @@
 		79461F2E21E6568E00C35B7B /* Emptities */ = {
 			isa = PBXGroup;
 			children = (
+				79461F4121E65EBB00C35B7B /* ParticipantsEntity.swift */,
 			);
 			path = Emptities;
 			sourceTree = "<group>";
@@ -105,6 +128,8 @@
 		79461F2F21E6569800C35B7B /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				79461F3F21E65E7F00C35B7B /* LocalParticipantsRepository.swift */,
+				79461F4321E661E800C35B7B /* Repository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -143,6 +168,14 @@
 			path = AddParticipantsViewController;
 			sourceTree = "<group>";
 		};
+		CCED80746709A9E6F96A2A5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FEA54365E003A3DC4B2ED729 /* Pods_Christmas_dinner.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +183,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79461F2321E6512700C35B7B /* Build configuration list for PBXNativeTarget "Christmas dinner" */;
 			buildPhases = (
+				E08126B30941EC20B94E0033 /* [CP] Check Pods Manifest.lock */,
 				79461F0D21E6512600C35B7B /* Sources */,
 				79461F0E21E6512600C35B7B /* Frameworks */,
 				79461F0F21E6512600C35B7B /* Resources */,
+				E09F33FC462C15DD456332FF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -211,14 +246,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E08126B30941EC20B94E0033 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Christmas dinner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E09F33FC462C15DD456332FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Christmas dinner/Pods-Christmas dinner-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Christmas dinner/Pods-Christmas dinner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		79461F0D21E6512600C35B7B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79461F4221E65EBB00C35B7B /* ParticipantsEntity.swift in Sources */,
 				79461F3B21E6596700C35B7B /* AddParticipantsViewController.swift in Sources */,
 				79461F2B21E655C600C35B7B /* ParticipantsViewController.swift in Sources */,
+				79461F4421E661E800C35B7B /* Repository.swift in Sources */,
 				79461F3E21E659B700C35B7B /* Participants.swift in Sources */,
+				79461F4021E65E7F00C35B7B /* LocalParticipantsRepository.swift in Sources */,
 				79461F1521E6512600C35B7B /* AppDelegate.swift in Sources */,
 				79461F3621E6587700C35B7B /* ParticipantsCell.swift in Sources */,
 			);
@@ -354,6 +433,7 @@
 		};
 		79461F2421E6512700C35B7B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF1D08EE39A0A823293B3B1B /* Pods-Christmas dinner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -371,6 +451,7 @@
 		};
 		79461F2521E6512700C35B7B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E3856F6E80EBB1F7930BE80 /* Pods-Christmas dinner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

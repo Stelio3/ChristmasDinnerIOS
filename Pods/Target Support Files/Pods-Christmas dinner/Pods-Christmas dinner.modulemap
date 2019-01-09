@@ -1,0 +1,6 @@
+framework module Pods_Christmas_dinner {
+  umbrella header "Pods-Christmas dinner-umbrella.h"
+
+  export *
+  module * { export * }
+}
