@@ -13,7 +13,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddParticipantsViewController" customModule="Christmas_dinner" customModuleProvider="target">
             <connections>
-                <outlet property="name" destination="tDf-6x-arV" id="rfI-9V-o04"/>
+                <outlet property="name" destination="tDf-6x-arV" id="O8B-rw-XJ8"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="viewBack" destination="8bf-Uh-Ufa" id="kKE-Pm-D7y"/>
             </connections>

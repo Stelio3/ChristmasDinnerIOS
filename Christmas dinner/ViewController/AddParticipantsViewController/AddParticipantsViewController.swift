@@ -17,13 +17,13 @@ class AddParticipantsViewController: UIViewController {
     
     @IBOutlet weak var viewBack:UIView!
     @IBOutlet weak var name:UITextField!
-    internal var participants: LocalParticipantsRepository!
+    internal var repository: LocalParticipantsRepository!
     weak var delegate: AddParticipantsViewControllerDelegate!
     
     convenience init(participants: Participants?) {
         self.init()
         if participants == nil {
-            self.participants = LocalParticipantsRepository()
+            self.repository = LocalParticipantsRepository()
         }
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -37,7 +37,7 @@ class AddParticipantsViewController: UIViewController {
         super.viewDidLoad()
         viewBack.layer.cornerRadius = 8.0
         viewBack.layer.masksToBounds = true
-        
+        repository = LocalParticipantsRepository()
         // Do any additional setup after loading the view.
     }
     
@@ -51,7 +51,7 @@ class AddParticipantsViewController: UIViewController {
     }
     
     @IBAction func saveButtonPressed() {
-        if (participants.get(name: name.text!) != nil) ||
+        if (repository.get(name: name.text!) != nil) ||
             (name.text?.elementsEqual(""))! {
             self.delegate?.errorAddParticipantsViewController(self)
         }else{
@@ -63,10 +63,10 @@ class AddParticipantsViewController: UIViewController {
             UIView.animate(withDuration: 0.25, animations: {
                 self.view.backgroundColor = UIColor.clear
             }) { (bool) in
-                if self.participants.create(a: participant){
+                if self.repository.create(a: participant){
                     self.delegate?.addParticipantsViewController(self, didEditParticipants: participant)
                 }
             }
-        }
+            }
     }
 }

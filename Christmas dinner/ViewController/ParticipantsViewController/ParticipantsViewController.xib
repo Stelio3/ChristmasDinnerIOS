@@ -22,23 +22,30 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Yfx-bW-6Ft">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <rect key="frame" x="0.0" y="56" width="375" height="611"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="Qru-JE-ERd"/>
                         <outlet property="delegate" destination="-1" id="QSE-NX-7gE"/>
                     </connections>
                 </tableView>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="USl-hS-Lec">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="Yfx-bW-6Ft" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="2Ii-Xl-WpJ"/>
-                <constraint firstItem="Yfx-bW-6Ft" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="86t-LR-i8w"/>
-                <constraint firstItem="Yfx-bW-6Ft" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bCo-sR-Nh4"/>
-                <constraint firstAttribute="trailing" secondItem="Yfx-bW-6Ft" secondAttribute="trailing" id="lUX-Vr-291"/>
+                <constraint firstAttribute="trailing" secondItem="USl-hS-Lec" secondAttribute="trailing" id="7dK-i8-i9Z"/>
+                <constraint firstItem="Yfx-bW-6Ft" firstAttribute="top" secondItem="USl-hS-Lec" secondAttribute="bottom" id="8u5-5S-88W"/>
+                <constraint firstItem="USl-hS-Lec" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="atV-Wi-eix"/>
+                <constraint firstItem="USl-hS-Lec" firstAttribute="trailing" secondItem="Yfx-bW-6Ft" secondAttribute="trailing" id="mnp-oc-mni"/>
+                <constraint firstItem="USl-hS-Lec" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="oDG-Q3-FrU"/>
+                <constraint firstItem="USl-hS-Lec" firstAttribute="leading" secondItem="Yfx-bW-6Ft" secondAttribute="leading" id="sxp-nN-rcw"/>
+                <constraint firstItem="Yfx-bW-6Ft" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="v5H-v2-5GM"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="24.5" y="51.5"/>
+            <point key="canvasLocation" x="-25" y="-27"/>
         </view>
     </objects>
 </document>

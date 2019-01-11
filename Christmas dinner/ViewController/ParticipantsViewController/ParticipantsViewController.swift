@@ -112,7 +112,7 @@ extension ParticipantsViewController: UITableViewDelegate, UITableViewDataSource
         if isFiltering(){
             let participant = filteredParticipants[indexPath.row]
             let updateVC = UpdateViewController(participant: participant)
-            updateVC.delegate = self as! UpdateViewControllerDelegate
+            updateVC.delegate = self
             updateVC.modalTransitionStyle = .coverVertical
             updateVC.modalPresentationStyle = .overCurrentContext
             searchController.dismiss(animated: true, completion: nil)
@@ -120,7 +120,7 @@ extension ParticipantsViewController: UITableViewDelegate, UITableViewDataSource
         }else{
             let participant = participants[indexPath.row]
             let updateVC = UpdateViewController(participant: participant)
-            updateVC.delegate = self as! UpdateViewControllerDelegate
+            updateVC.delegate = self
             updateVC.modalTransitionStyle = .coverVertical
             updateVC.modalPresentationStyle = .overCurrentContext
             searchController.dismiss(animated: true, completion: nil)
@@ -161,6 +161,19 @@ extension ParticipantsViewController: AddParticipantsViewControllerDelegate {
             self.participants = repository.getAll()
             tableView.reloadData()
         }
+    }
+}
+extension ParticipantsViewController: UpdateViewControllerDelegate {
+    func updateViewController(_ vc: UpdateViewController, didEditParticipant participants: Participants) {
+        vc.dismiss(animated: true, completion: nil)
+        if repository.update(a: participants){
+            self.participants = repository.getAll()
+            tableView.reloadData()
+        }
+    }
+    
+    func errorUpdateViewController(_ vc: UpdateViewController) {
+        vc.dismiss(animated: true, completion: nil)
     }
 }
 extension ParticipantsViewController: UISearchResultsUpdating{
