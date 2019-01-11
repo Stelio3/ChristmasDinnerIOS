@@ -19,8 +19,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         if let window = window{
             let mainVC = ParticipantsViewController()
-            let navigationController = UINavigationController(rootViewController: mainVC)
-            window.rootViewController = navigationController
+            //let dishVC = DishViewController()
+            
+            let mainNavController = UINavigationController(rootViewController: mainVC)
+            /*let dishNavController = UINavigationController(rootViewController: dishVC)
+            
+            let tabController = UITabBarController()
+            tabController.tabBar.isTranslucent = false
+            tabController.viewControllers = [mainNavController, dishNavController]*/
+            
+            window.rootViewController = mainNavController
             window.makeKeyAndVisible()
         }
         // Override point for customization after application launch.

@@ -12,6 +12,7 @@ import RealmSwift
 class ParticipantsViewController: UIViewController {
     
     @IBOutlet weak var tableView:UITableView!
+    @IBOutlet weak var btnFiltrar:UIButton!
     
     let searchController = UISearchController(searchResultsController: nil)
     let realm = try! Realm()
@@ -39,7 +40,6 @@ class ParticipantsViewController: UIViewController {
         createButtonAdd()
         configSearchBar()
     }
-    
     @objc internal func addPressed() {
         let addVC = AddParticipantsViewController()
         addVC.delegate = self
@@ -76,7 +76,7 @@ class ParticipantsViewController: UIViewController {
     }
     internal func filterContentForSearchText(searchText: String){
         filteredParticipants = participants.filter({ (nParticipants: Participants ) -> Bool in
-            return (nParticipants.name.lowercased().contains(searchText.lowercased()))
+            return nParticipants.name.lowercased().contains((searchText.lowercased()))
         })
         tableView.reloadData()
     }
@@ -102,6 +102,7 @@ extension ParticipantsViewController: UITableViewDelegate, UITableViewDataSource
         let cell: ParticipantsCell = (tableView.dequeueReusableCell(withIdentifier: "ParticipantsCell", for: indexPath) as? ParticipantsCell)!
         let participant = participants[indexPath.row]
         cell.lblcell.text = participant.name
+        cell.checkimagenPaid.isHidden = participant.paid
         return cell
     }
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

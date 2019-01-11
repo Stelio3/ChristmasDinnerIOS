@@ -20,26 +20,27 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="67.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="sAs-Qy-CaQ">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="sAs-Qy-CaQ">
                         <rect key="frame" x="256" y="11" width="48" height="38"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="48" id="r22-3N-VsV"/>
+                        </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaS-XJ-FmZ">
                         <rect key="frame" x="16" y="11" width="232" height="38"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="232" id="dEf-h5-wdQ"/>
-                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottomMargin" secondItem="gaS-XJ-FmZ" secondAttribute="bottom" constant="8" id="1DE-PE-1Co"/>
-                    <constraint firstItem="gaS-XJ-FmZ" firstAttribute="bottom" secondItem="sAs-Qy-CaQ" secondAttribute="bottom" id="5CS-OA-EJ1"/>
-                    <constraint firstItem="gaS-XJ-FmZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Jpt-Oz-JmD"/>
-                    <constraint firstItem="sAs-Qy-CaQ" firstAttribute="leading" secondItem="gaS-XJ-FmZ" secondAttribute="trailing" constant="8" symbolic="YES" id="UZC-7G-QxX"/>
-                    <constraint firstItem="gaS-XJ-FmZ" firstAttribute="top" secondItem="sAs-Qy-CaQ" secondAttribute="top" id="nt4-Ih-Ep7"/>
-                    <constraint firstItem="gaS-XJ-FmZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="sCK-e7-Ief"/>
+                    <constraint firstItem="gaS-XJ-FmZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="7ja-gQ-7UZ"/>
+                    <constraint firstItem="gaS-XJ-FmZ" firstAttribute="top" secondItem="sAs-Qy-CaQ" secondAttribute="top" id="FXZ-Lv-gGj"/>
+                    <constraint firstItem="gaS-XJ-FmZ" firstAttribute="bottom" secondItem="sAs-Qy-CaQ" secondAttribute="bottom" id="Npx-7a-ZzC"/>
+                    <constraint firstItem="sAs-Qy-CaQ" firstAttribute="leading" secondItem="gaS-XJ-FmZ" secondAttribute="trailing" constant="8" symbolic="YES" id="U3S-QD-yUl"/>
+                    <constraint firstItem="sAs-Qy-CaQ" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="q4U-HA-CEV"/>
+                    <constraint firstItem="gaS-XJ-FmZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="wMx-dH-suZ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="gaS-XJ-FmZ" secondAttribute="bottom" constant="8" id="xZi-rf-Jck"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
