@@ -10,24 +10,20 @@ import UIKit
 
 protocol AddParticipantsViewControllerDelegate: class {
     func addParticipantsViewController(_ vc: AddParticipantsViewController, didEditParticipants participants: Participants)
+    func errorAddParticipantsViewController(_ vc:AddParticipantsViewController)
 }
 
 class AddParticipantsViewController: UIViewController {
     
     @IBOutlet weak var viewBack:UIView!
-    @IBOutlet weak var textField:UITextField!
-    @IBOutlet weak var saveButton:UIButton!
-    internal var participants: Participants!
+    @IBOutlet weak var name:UITextField!
+    internal var participants: LocalParticipantsRepository!
     weak var delegate: AddParticipantsViewControllerDelegate!
     
     convenience init(participants: Participants?) {
         self.init()
         if participants == nil {
-            self.participants = Participants()
-            self.participants.name = ""
-        }
-        else {
-            self.participants = participants
+            self.participants = LocalParticipantsRepository()
         }
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -42,9 +38,6 @@ class AddParticipantsViewController: UIViewController {
         viewBack.layer.cornerRadius = 8.0
         viewBack.layer.masksToBounds = true
         
-        saveButton.layer.cornerRadius = 8.0
-        saveButton.layer.masksToBounds = true
-        
         // Do any additional setup after loading the view.
     }
     
@@ -58,7 +51,22 @@ class AddParticipantsViewController: UIViewController {
     }
     
     @IBAction func saveButtonPressed() {
-        self.participants.name = textField.text
-        delegate.addParticipantsViewController(self, didEditParticipants: participants)
+        if (participants.get(name: name.text!) != nil) ||
+            (name.text?.elementsEqual(""))! {
+            self.delegate?.errorAddParticipantsViewController(self)
+        }else{
+            let participant = Participants()
+            participant.id = UUID().uuidString
+            participant.name = name.text!
+            participant.paid = false
+            participant.creationDate = Date()
+            UIView.animate(withDuration: 0.25, animations: {
+                self.view.backgroundColor = UIColor.clear
+            }) { (bool) in
+                if self.participants.create(a: participant){
+                    self.delegate?.addParticipantsViewController(self, didEditParticipants: participant)
+                }
+            }
+        }
     }
 }

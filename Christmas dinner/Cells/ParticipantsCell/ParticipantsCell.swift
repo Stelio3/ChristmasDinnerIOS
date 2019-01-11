@@ -11,7 +11,8 @@ import UIKit
 class ParticipantsCell: UITableViewCell {
 
     @IBOutlet weak var lblcell:UILabel!
-    
+    @IBOutlet weak var checkimagenPaid:UIImageView!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

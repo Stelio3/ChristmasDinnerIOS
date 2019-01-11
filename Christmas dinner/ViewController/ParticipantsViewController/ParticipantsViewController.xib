@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ParticipantsViewController" customModule="Christmas_dinner" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="Yfx-bW-6Ft" id="06I-eG-XXC"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,9 +21,8 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Yfx-bW-6Ft">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Yfx-bW-6Ft">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="Qru-JE-ERd"/>
@@ -31,6 +31,12 @@
                 </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Yfx-bW-6Ft" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="2Ii-Xl-WpJ"/>
+                <constraint firstItem="Yfx-bW-6Ft" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="86t-LR-i8w"/>
+                <constraint firstItem="Yfx-bW-6Ft" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bCo-sR-Nh4"/>
+                <constraint firstAttribute="trailing" secondItem="Yfx-bW-6Ft" secondAttribute="trailing" id="lUX-Vr-291"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="24.5" y="51.5"/>
         </view>

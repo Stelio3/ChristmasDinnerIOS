@@ -10,20 +10,30 @@ import Foundation
 import RealmSwift
 
 class ParticipantsEntity: Object {
+    @objc dynamic var id = ""
     @objc dynamic var name = ""
+    @objc dynamic var paid = false
+    @objc dynamic var creationDate = Date()
     
-    override static func primaryKey() -> String? {
-        return "name"
+    
+    override static func primaryKey() -> String?{
+        return "id"
     }
     
-    convenience init(participants: Participants) {
+    convenience init(participant: Participants) {
         self.init()
-        self.name = participants.name
+        self.id = participant.id
+        self.name = participant.name
+        self.paid = participant.paid
+        self.creationDate = participant.creationDate
     }
     
-    func participantsModel() -> Participants {
+    func participantModel() -> Participants {
         let model = Participants()
-        model.name = self.name
+        model.id = id
+        model.name = name
+        model.paid = paid
+        model.creationDate = creationDate
         return model
     }
 }

@@ -9,5 +9,8 @@
 import Foundation
 
 class Participants {
-    var name: String!
+    var id:String!
+    var name:String!
+    var paid = false
+    var creationDate:Date!
 }

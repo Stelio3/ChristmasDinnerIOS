@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		110D4D9C2E19D1BDE3EB8D50 /* Pods_Christmas_dinner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEA54365E003A3DC4B2ED729 /* Pods_Christmas_dinner.framework */; };
+		3220653821E7A85800516A5E /* UpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3220653621E7A85800516A5E /* UpdateViewController.swift */; };
+		3220653921E7A85800516A5E /* UpdateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3220653721E7A85800516A5E /* UpdateViewController.xib */; };
 		79461F1521E6512600C35B7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79461F1421E6512600C35B7B /* AppDelegate.swift */; };
 		79461F1C21E6512700C35B7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79461F1B21E6512700C35B7B /* Assets.xcassets */; };
 		79461F1F21E6512700C35B7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79461F1D21E6512700C35B7B /* LaunchScreen.storyboard */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3220653621E7A85800516A5E /* UpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateViewController.swift; sourceTree = "<group>"; };
+		3220653721E7A85800516A5E /* UpdateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UpdateViewController.xib; sourceTree = "<group>"; };
 		6E3856F6E80EBB1F7930BE80 /* Pods-Christmas dinner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Christmas dinner.release.xcconfig"; path = "Pods/Target Support Files/Pods-Christmas dinner/Pods-Christmas dinner.release.xcconfig"; sourceTree = "<group>"; };
 		79461F1121E6512600C35B7B /* Christmas dinner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Christmas dinner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79461F1421E6512600C35B7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +60,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3220653521E7A82B00516A5E /* UpdateViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3220653621E7A85800516A5E /* UpdateViewController.swift */,
+				3220653721E7A85800516A5E /* UpdateViewController.xib */,
+			);
+			path = UpdateViewController;
+			sourceTree = "<group>";
+		};
 		73C53ABB97A7CEFF16D46D72 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +166,7 @@
 		79461F3321E656C900C35B7B /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				3220653521E7A82B00516A5E /* UpdateViewController */,
 				79461F3821E6592700C35B7B /* AddParticipantsViewController */,
 				79461F2621E654F100C35B7B /* ParticipantsViewController */,
 			);
@@ -241,6 +255,7 @@
 				79461F1C21E6512700C35B7B /* Assets.xcassets in Resources */,
 				79461F3C21E6596700C35B7B /* AddParticipantsViewController.xib in Resources */,
 				79461F3721E6587700C35B7B /* ParticipantsCell.xib in Resources */,
+				3220653921E7A85800516A5E /* UpdateViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +309,7 @@
 			files = (
 				79461F4221E65EBB00C35B7B /* ParticipantsEntity.swift in Sources */,
 				79461F3B21E6596700C35B7B /* AddParticipantsViewController.swift in Sources */,
+				3220653821E7A85800516A5E /* UpdateViewController.swift in Sources */,
 				79461F2B21E655C600C35B7B /* ParticipantsViewController.swift in Sources */,
 				79461F4421E661E800C35B7B /* Repository.swift in Sources */,
 				79461F3E21E659B700C35B7B /* Participants.swift in Sources */,
