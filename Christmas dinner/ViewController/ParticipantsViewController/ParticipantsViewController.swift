@@ -56,7 +56,7 @@ class ParticipantsViewController: UIViewController {
     internal func configSearchBar(){
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
-        searchController.searchBar.placeholder = "Search..."
+        searchController.searchBar.placeholder = "Escribe Morosos para filtrar"
         searchController.searchBar.backgroundColor = UIColor.white
         navigationItem.searchController = searchController
     }
@@ -75,10 +75,17 @@ class ParticipantsViewController: UIViewController {
         return searchController.isActive && !searchBarIsEmpty()
     }
     internal func filterContentForSearchText(searchText: String){
-        filteredParticipants = participants.filter({ (nParticipants: Participants ) -> Bool in
-            return nParticipants.name.lowercased().contains((searchText.lowercased()))
-        })
-        tableView.reloadData()
+        if !searchText.elementsEqual("Morosos"){
+            filteredParticipants = participants.filter({ (nParticipants: Participants ) -> Bool in
+                return nParticipants.name.lowercased().contains((searchText.lowercased()))
+            })
+        }else{
+            filteredParticipants = participants.filter({ (nParticipants: Participants ) -> Bool in
+                return !(nParticipants.paid)
+            })
+        }
+            tableView.reloadData()
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -100,9 +107,15 @@ extension ParticipantsViewController: UITableViewDelegate, UITableViewDataSource
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: ParticipantsCell = (tableView.dequeueReusableCell(withIdentifier: "ParticipantsCell", for: indexPath) as? ParticipantsCell)!
-        let participant = participants[indexPath.row]
-        cell.lblcell.text = participant.name
-        cell.checkimagenPaid.isHidden = participant.paid
+        if isFiltering(){
+            let participant = filteredParticipants[indexPath.row]
+            cell.lblcell.text = participant.name
+            cell.checkimagenPaid.isHidden = !participant.paid
+        }else{
+            let participant = participants[indexPath.row]
+            cell.lblcell.text = participant.name
+            cell.checkimagenPaid.isHidden = !participant.paid
+        }
         return cell
     }
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
